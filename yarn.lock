@@ -2261,14 +2261,16 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-unity-to-json@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/unity-to-json/-/unity-to-json-1.0.0.tgz#3325df23577b0694e2159f54fd9754d7b6905304"
-  integrity sha512-r38FPMnL00gid9t1OqN1HRvdII6etjN9Ly6co2amh0cMWemdNOPIONTQ+8SQUe2BAYIWzpEVXnlfkO1V+kPJwg==
+unity-to-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/unity-to-json/-/unity-to-json-1.1.0.tgz#b8496893f199a192912a1a903069a8471671aa1b"
+  integrity sha512-ZXtTAHMeZiLIKlbPo5wCdtFlHZQn5wtuVbXErnzyItrSntOQKI6YHsalvuo/cocYr6xXUsSjhLYObQr3JgHDaw==
   dependencies:
     fbx2gltf "^0.9.7-p1"
     glob "^10.3.4"
+    glob-watcher "^6.0.0"
     js-yaml "^4.1.0"
+    normalize-path "^3.0.0"
 
 uri-js@^4.2.2:
   version "4.4.1"
