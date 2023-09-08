@@ -26,7 +26,6 @@
   "dependencies": {
     "@types/three": "^0.155.0",
     "eslint-plugin-import": "^2.28.1",
-    "glob-watcher": "^6.0.0",
     "three": "^0.155.0",
     "unity-to-json": "^1.1.0"
   }
