@@ -2266,23 +2266,18 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-unity-to-json-threejs-parser@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/unity-to-json-threejs-parser/-/unity-to-json-threejs-parser-1.0.0.tgz#3f329264ed851dab68d6495ff350795743fe7e0b"
-  integrity sha512-78zXjx5nPw9rA7YVhlK1nk0bJzau7jJgUP6emztLTLy81LCJaOu/coV9TIEkmLhTdp56ynGl+Ainf/DqN3sLPA==
-  dependencies:
-    fbx2gltf "^0.9.7-p1"
-    glob "^10.3.4"
-    glob-watcher "^6.0.0"
-    js-yaml "^4.1.0"
-    normalize-path "^3.0.0"
-    three "^0.156.1"
-    unity-to-json "^1.1.0"
-
-unity-to-json@^1.1.0:
+unity-to-json-threejs-parser@1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/unity-to-json/-/unity-to-json-1.1.0.tgz#b8496893f199a192912a1a903069a8471671aa1b"
-  integrity sha512-ZXtTAHMeZiLIKlbPo5wCdtFlHZQn5wtuVbXErnzyItrSntOQKI6YHsalvuo/cocYr6xXUsSjhLYObQr3JgHDaw==
+  resolved "https://registry.yarnpkg.com/unity-to-json-threejs-parser/-/unity-to-json-threejs-parser-1.1.0.tgz#7e0c252d54fc50735c475ac5175ea736c2d9c0ed"
+  integrity sha512-s/hEtiEeE88Eq+YSK31I9+nGpC76DiKjKgKvK6pApgORFL9ggUU+WJLt0qj3zo+2eFtvtKnuEU9bDoInUGBQ4Q==
+  dependencies:
+    three "^0.156.1"
+    unity-to-json "^1.2.0"
+
+unity-to-json@1.2.0, unity-to-json@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/unity-to-json/-/unity-to-json-1.2.0.tgz#6d1ce413efb107b9cec24e255b3fbfc20cdae615"
+  integrity sha512-+3ZBGGSW8WP0qbV/3gs+vmlGRk6uc2P9uEFCK13YCrAkOYgua8GdIkDwLQNA5rvsdDAb+hiTDRZucxwwG+3JMQ==
   dependencies:
     fbx2gltf "^0.9.7-p1"
     glob "^10.3.4"

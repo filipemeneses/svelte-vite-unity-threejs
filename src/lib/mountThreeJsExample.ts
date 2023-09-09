@@ -58,7 +58,7 @@ export const mountThreeJsExample = async (container: Element) => {
 
   tick();
 
-  const instances = await parseUnityJsonToThreejs(unityProjectJson);
+  const instances = await parseUnityJsonToThreejs('SampleScene', unityProjectJson);
 
   instances.forEach((instance) => {
     if (instance instanceof THREE.Group) {
