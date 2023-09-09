@@ -1,7 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
 import {
-  interpretScene,
   createUnityProjectToJsonWatcher,
 } from 'unity-to-json';
 
@@ -22,7 +21,7 @@ const startWatcher = async () => {
     sceneFilename: SCENE_FILENAME,
     async onSceneChange(context) {
       await writeScene(
-        await interpretScene(context),
+        context,
       );
     },
   });

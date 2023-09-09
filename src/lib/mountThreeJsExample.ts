@@ -1,9 +1,11 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { createUnityJsonToThreeJsParser } from 'unity-to-json-threejs-parser';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import unityProjectJson from './unity-scene.json';
-import { readUnityJson } from './readUnityJson';
 
-export const mountThreeJsExample = (container: Element) => {
+const parseUnityJsonToThreejs = createUnityJsonToThreeJsParser({ THREE, GLTFLoader });
+
+export const mountThreeJsExample = async (container: Element) => {
   const renderer = new THREE.WebGLRenderer({
     antialias: true,
   });
@@ -46,9 +48,6 @@ export const mountThreeJsExample = (container: Element) => {
   grid.material.transparent = true;
   scene.add(grid);
 
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.update();
-
   container.appendChild(renderer.domElement);
 
   const tick = () => {
@@ -59,5 +58,14 @@ export const mountThreeJsExample = (container: Element) => {
 
   tick();
 
-  readUnityJson(unityProjectJson, { scene, camera, controls });
+  const instances = await parseUnityJsonToThreejs(unityProjectJson);
+
+  instances.forEach((instance) => {
+    if (instance instanceof THREE.Group) {
+      scene.add(instance);
+    }
+    if (instance instanceof THREE.Camera) {
+      camera.copy(instance);
+    }
+  });
 };

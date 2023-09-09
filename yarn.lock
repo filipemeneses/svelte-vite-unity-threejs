@@ -2168,6 +2168,11 @@ three@^0.155.0:
   resolved "https://registry.yarnpkg.com/three/-/three-0.155.0.tgz#cca9b8ad817830c8b4fdd8f0d9a12a2e413a2672"
   integrity sha512-sNgCYmDijnIqkD/bMfk+1pHg3YzsxW7V2ChpuP6HCQ8NiZr3RufsXQr8M3SSUMjW4hG+sUk7YbyuY0DncaDTJQ==
 
+three@^0.156.1:
+  version "0.156.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.156.1.tgz#bab4fec121a5b3975eb4f4d227d9c912171eb399"
+  integrity sha512-kP7H0FK9d/k6t/XvQ9FO6i+QrePoDcNhwl0I02+wmUJRNSLCUIDMcfObnzQvxb37/0Uc9TDT0T1HgsRRrO6SYQ==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
@@ -2260,6 +2265,19 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
+
+unity-to-json-threejs-parser@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unity-to-json-threejs-parser/-/unity-to-json-threejs-parser-1.0.0.tgz#3f329264ed851dab68d6495ff350795743fe7e0b"
+  integrity sha512-78zXjx5nPw9rA7YVhlK1nk0bJzau7jJgUP6emztLTLy81LCJaOu/coV9TIEkmLhTdp56ynGl+Ainf/DqN3sLPA==
+  dependencies:
+    fbx2gltf "^0.9.7-p1"
+    glob "^10.3.4"
+    glob-watcher "^6.0.0"
+    js-yaml "^4.1.0"
+    normalize-path "^3.0.0"
+    three "^0.156.1"
+    unity-to-json "^1.1.0"
 
 unity-to-json@^1.1.0:
   version "1.1.0"
